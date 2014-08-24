@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>xProfile Admin</title>
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext" type="text/css" media="all" />
+		<link rel="stylesheet" href="//example.com/wp-includes/css/dashicons.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="//example.com/wp-admin/css/wp-admin.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="//example.com/wp-includes/css/buttons.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="all">
+
+		<script src="jquery.js"></script>
+		<script src="app.js" defer></script>
+	</head>
+
+	<body class="wp-admin wp-core-ui js admin-bar admin-color-fresh">
+		<div class="xprofile-wrapper">
+
+			<nav class="xprofile-navigation">
+				<select class="group-picker">
+					<option value="1">Field Group Alpha</option>
+					<option value="2">Field Group Beta</option>
+					<option value="3">Field Group Gamma</option>
+					<option value="4">Field Group Delta</option>
+				</select>
+			</nav>
+
+			<div class="xprofile-groups xprofile-groups-primary">
+				<div class="xprofile-group" data-group-id="1">
+					<div class="xprofile-field" data-field-id="1" draggable="true">
+						<header contenteditable="true" placeholder="Profile field name">My First Profile Field</header>
+						<p contenteditable="true">Field Description goes here.</p>
+
+						<div class="field-controls">
+							<button class="dashicons dashicons-trash button trash-button">
+							<button class="button change-button">Change Group</button>
+						</div>
+					</div><!-- .xprofile-field -->
+
+					<div class="xprofile-field" data-field-id="2" draggable="true">
+						<header contenteditable="true" placeholder="Profile field name">My Second Profile Field</header>
+						<p contenteditable="true">Another Field Description goes here.</p>
+
+						<div class="field-controls">
+							<button class="dashicons dashicons-trash button trash-button">
+							<button class="button change-button">Change Group</button>
+						</div>
+					</div><!-- .xprofile-field -->
+				</div><!-- .xprofile-group -->
+
+				<div class="xprofile-group hide" data-group-id="2">
+					<div class="xprofile-field" data-field-id="3" draggable="true">
+						<header contenteditable="true" placeholder="Profile field name">My Third Profile Field</header>
+						<p contenteditable="true">Field Description goes here.</p>
+
+						<div class="field-controls">
+							<button class="dashicons dashicons-trash button trash-button">
+							<button class="button change-button">Change Group</button>
+						</div>
+					</div><!-- .xprofile-field -->
+
+					<div class="xprofile-field" data-field-id="4" draggable="true">
+						<header contenteditable="true" placeholder="Profile field name">My Fourth Profile Field</header>
+						<p contenteditable="true">Another Field Description goes here.</p>
+
+						<div class="field-controls">
+							<button class="dashicons dashicons-trash button trash-button">
+							<button class="button change-button">Change Group</button>
+						</div>
+					</div><!-- .xprofile-field -->
+				</div><!-- .xprofile-group -->
+			</div>
+
+			<!--
+			<div class="xprofile-groups xprofile-groups-secondary">
+			</div>
+			-->
+
+			<div class="xprofile-controls">
+				<button class="dashicons dashicons-plus button add-button">
+				<button class="dashicons dashicons-cloud button save-button">
+			</div>
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+
+/**
+ * GENERAL APPEARANCE AND SPACING
+ */
+
+.xprofile-wrapper {
+	margin: 1.5rem;
+}
+
+.xprofile-navigation,
+.xprofile-groups,
+.xprofile-controls {
+	width: 100%;
+}
+
+.xprofile-wrapper .dashicons {
+	font-size: 2rem;
+	height: 44px;
+	padding: 0;
+	width: 44px;
+}
+
+[contenteditable="true"]:focus {
+	background-color: #FFF;
+}
+[contenteditable="true"]:empty:before {
+	content: attr(placeholder);
+	opacity: 0.54;
+}
+
+/**
+ * NAVIGATION
+ */
+
+.xprofile-navigation {
+	z-index: 100;
+
+	position: -webkit-sticky; /* Safari */
+	position: sticky; /* iOS, Firefox w/ flag */
+	top: 1rem;
+}
+
+.group-picker {
+	font-size: 16px;
+	font-weight: 300;
+	width: 100%;
+}
+
+
+/**
+ * BUTTONS AND CONTROLS
+ */
+
+.xprofile-controls,
+.xprofile-field {
+	clear: both;
+}
+.field-controls {
+	overflow: auto;
+}
+
+.field-controls .trash-button {
+	float: left;
+}
+.field-controls .change-button {
+	float: right;
+}
+
+.xprofile-controls .button {
+	background-color: #FFF;
+}
+
+.xprofile-controls .add-button {
+	float: left;
+	padding-top: 0.5rem;  /* approx. line up the top of the + and Save buttons */
+}
+.xprofile-controls .save-button {
+	float: right;
+}
+
+
+.xprofile-wrapper .trash-button {
+	color: #A00;
+}
+.xprofile-wrapper .trash-button:hover {
+	color: #F00;
+}
+
+
+
+
+
+.xprofile-field {
+	border-top: 1px solid brown;
+	margin-bottom: 100px;
+}
+.xprofile-controls {
+	border-top: 1px solid green;
+}
