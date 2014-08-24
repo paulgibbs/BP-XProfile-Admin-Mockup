@@ -106,8 +106,8 @@
 
 
 .xprofile-field {
-	border-top: 1px solid brown;
-	margin-bottom: 100px;
+	background-color: #EEE8AA;
+	margin-bottom: 50px;
 }
 .xprofile-controls {
 	border-top: 1px solid green;
