@@ -112,3 +112,11 @@
 .xprofile-controls {
 	border-top: 1px solid green;
 }
+.xprofile-group {
+	background-color: green;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.dropzone {
+	background-color: pink;
+}
