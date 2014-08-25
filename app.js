@@ -1,4 +1,6 @@
 (function( $, undefined ) {
+	var origElement;
+
 
 	// Show/hide profile fields when the main nav changes.
 	$( '.xprofile-navigation' ).on( 'change', function() {
@@ -9,12 +11,12 @@
 	} );
 
 
-	// Drag and drop, within profile field groups.
-	var origElement = null;
+	/**
+	 * Drag and drop, within profile field groups.
+	 */
 
-
-	// When the draggable element is starting to move.
 	$( '.xprofile-groups' ).on( 'dragstart', '.xprofile-field', function( e ) {
+		// When the draggable element is starting to move.
 		// this/e.target is the source node.
 
 		origElement = $( this );
@@ -34,6 +36,7 @@
 	}
 
 	$( '.xprofile-groups' ).on( 'dragover', '.xprofile-group', function( e ) {
+		// When dragging OR hovering over a drop zone.
 		// this/e.target is the source node.
 		e.preventDefault();
 
@@ -41,21 +44,21 @@
 		return false;
 	} );
 
-	// When dragging over a drop zone.
 	$( '.xprofile-groups' ).on( 'dragenter', '.xprofile-group', function() {
+		// When dragging over a drop zone.
 		// this/e.target is the current drop zone.
 		$( this ).addClass( 'dropzone' );
 	} );
 
-	// When leaving a drop zone that had been dragged over.
 	$( '.xprofile-groups' ).on( 'dragleave', '.xprofile-group', function() {
+		// When leaving a drop zone that had been dragged over.
 		// this/e.target is the previous drop zone.
 
 		$( this ).removeClass( 'dropzone' );
 	} );
 
-	// When an element is dropped inside a drop zone.
 	$( '.xprofile-groups' ).on( 'drop', '.xprofile-group', function( e ) {
+		// When an element is dropped inside a drop zone.
 		// this/e.target is the current drop zone.
 
 		// Stops the browser from redirecting.
@@ -70,8 +73,8 @@
 		return false;
 	} );
 
-	// Tidy up after something has been dragged and dropped.
 	$( '.xprofile-groups' ).on( 'dragend', '.xprofile-group', function() {
+	// Tidy up after something has been dragged and dropped.
 		// this/e.target is the source node.
 		$( '.xprofile-group' ).removeClass( 'dropzone' );
 	} );
