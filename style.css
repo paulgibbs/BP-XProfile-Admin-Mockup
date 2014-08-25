@@ -81,10 +81,12 @@
 	float: right;
 }
 
+.xprofile-controls {
+	margin-top: 4rem;
+}
 .xprofile-controls .button {
 	background-color: #FFF;
 }
-
 .xprofile-controls .add-button {
 	float: left;
 	padding-top: 0.5rem;  /* approx. line up the top of the + and Save buttons */
