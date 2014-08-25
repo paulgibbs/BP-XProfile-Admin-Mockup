@@ -20,7 +20,7 @@
 		origElement = $( this );
 		e.originalEvent.dataTransfer.effectAllowed = 'move';
 		e.originalEvent.dataTransfer.setData(
-			'text/html',
+			'text',
 			origElement.clone().wrap( '<div>' ).parent().html()  // aka innerHTML
 		);
 	} );
@@ -54,7 +54,7 @@
 		// Stops the browser from redirecting.
 		e.stopPropagation();
 
-		var data = e.originalEvent.dataTransfer.getData( 'text/html' );
+		var data = e.originalEvent.dataTransfer.getData( 'text' );
 		$( this ).prepend( data );
 
 		origElement.remove();
