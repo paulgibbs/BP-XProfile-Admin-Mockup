@@ -25,7 +25,14 @@
 		);
 	} );
 
-	// When dragging OR hovering over a drop zone.
+	// IE9 fix; https://goo.gl/0v2x1H
+	if ( !! document.createElement( 'div' ).dragDrop ) {
+		$( '.xprofile-groups' ).on( 'selectstart', '.xprofile-group', function() {
+			this.dragDrop();
+			return false;
+		} );
+	}
+
 	$( '.xprofile-groups' ).on( 'dragover', '.xprofile-group', function( e ) {
 		// this/e.target is the source node.
 		e.preventDefault();
