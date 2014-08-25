@@ -20,6 +20,7 @@
 		// this/e.target is the source node.
 
 		origElement = $( this );
+
 		e.originalEvent.dataTransfer.effectAllowed = 'move';
 		e.originalEvent.dataTransfer.setData(
 			'text',
@@ -38,16 +39,22 @@
 	$( '.xprofile-groups' ).on( 'dragover', '.xprofile-group', function( e ) {
 		// When dragging OR hovering over a drop zone.
 		// this/e.target is the source node.
-		e.preventDefault();
 
+		e.preventDefault();
 		e.originalEvent.dataTransfer.dropEffect = 'move';
+
 		return false;
 	} );
 
-	$( '.xprofile-groups' ).on( 'dragenter', '.xprofile-group', function() {
+	$( '.xprofile-groups' ).on( 'dragenter', '.xprofile-group', function( e ) {
 		// When dragging over a drop zone.
 		// this/e.target is the current drop zone.
+
+		e.preventDefault();
+		e.originalEvent.dataTransfer.dropEffect = 'move';
 		$( this ).addClass( 'dropzone' );
+
+		return false;
 	} );
 
 	$( '.xprofile-groups' ).on( 'dragleave', '.xprofile-group', function() {
