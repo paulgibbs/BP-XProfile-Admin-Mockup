@@ -14,7 +14,7 @@
 	 */
 	$( '.xprofile-group' ).sortable({
 		forcePlaceholderSize: true,
-		placeholder : '<div style="margin-bottom: 0">Drop item here</div>'
+		placeholder:          '<div style="margin-bottom: 0">Drop item here</div>'
 	});
 
 
