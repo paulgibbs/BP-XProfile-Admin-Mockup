@@ -97,6 +97,12 @@
 	margin-bottom: 0;
 }
 
+.xprofile-field header {
+	font-size: 16px;
+	font-weight: 600;
+	text-overflow: ellipsis;
+}
+
 
 /**
  * BUTTONS AND CONTROLS

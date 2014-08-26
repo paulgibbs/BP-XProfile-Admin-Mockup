@@ -13,7 +13,8 @@
 	 * Drag and drop within profile field groups.
 	 */
 	$( '.xprofile-group' ).sortable({
-		forcePlaceholderSize: true
+		forcePlaceholderSize: true,
+		handle:               '.change-button'
 	});
 
 
