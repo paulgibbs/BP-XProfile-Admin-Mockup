@@ -71,6 +71,25 @@
 	} );
 
 
+	/**
+	 * Strip HTML from contenteditable=true elements on drag/drop.
+	 */
+	$( '.xprofile-groups' ).on( 'drop', 'header,p', function( e ) {
+		var clipboard,
+			field = $( e.target );
+
+		e.preventDefault();
+
+		if ( e.originalEvent.dataTransfer ) {
+			clipboard = e.originalEvent.dataTransfer.getData( 'text/plain' );
+		} else {  // IE 9
+			clipboard = window.event.dataTransfer.getData( 'Text' );
+		}
+
+		field.text( field.text() + clipboard );
+	} );
+
+
 	$( document ).ready(function() {
 	});
 
