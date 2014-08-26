@@ -102,10 +102,10 @@
  * BUTTONS AND CONTROLS
  */
 
-.xprofile-controls,
 .xprofile-field {
 	clear: both;
 }
+.xprofile-controls,
 .field-controls {
 	overflow: auto;
 }
