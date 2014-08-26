@@ -61,7 +61,7 @@
 			}
 			selection.addRange( newRange );
 
-		} else { // IE 9
+		} else {  // IE 9
 			newRange = document.selection.createRange();
 			newRange.moveToElementText( e.target );
 			newRange.setStart( targetElement, origPosition + clipboard.length );
