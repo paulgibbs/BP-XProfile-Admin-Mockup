@@ -118,7 +118,8 @@
 }
 
 .xprofile-controls {
-	margin-top: 2rem;
+	margin-top: 1.5rem;
+	padding: 0 1rem;
 }
 .xprofile-controls .button {
 	background-color: #FFF;
