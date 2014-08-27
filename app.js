@@ -1,3 +1,4 @@
+/* global confirm */
 (function( $, undefined ) {
 
 	// Show/hide profile fields when the main nav changes.
@@ -90,6 +91,14 @@
 		}
 
 		field.text( field.text() + clipboard );
+	} );
+
+
+	/**
+	 * Destructive action "are you sure?" prompt.
+	 */
+	$( '.xprofile-groups' ).on( 'click', '.trash-button', function() {
+		confirm( 'Are you sure?' );
 	} );
 
 
