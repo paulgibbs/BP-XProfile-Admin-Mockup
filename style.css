@@ -110,6 +110,9 @@
 	font-weight: 600;
 	text-overflow: ellipsis;
 }
+.xprofile-field p {
+	font-size: 14px;
+}
 
 
 /**
