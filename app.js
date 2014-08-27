@@ -17,6 +17,9 @@
 		handle:               '.change-button'
 	});
 
+	//$( '.xprofile-groups' ).on( 'click', '.change-button', function() {
+	//} );
+
 
 	/**
 	 * Strip HTML from contenteditable=true elements on copy/paste.
