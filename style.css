@@ -80,11 +80,6 @@
  */
 
 .xprofile-group {
-	background-color: #FFF;
-	border: 1px solid #E5E5E5;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
-
-	padding: 8px;
 }
 
 
@@ -93,9 +88,8 @@
  */
 
 .xprofile-field {
-	background: #FAFAFA;
-	border: 1px solid #E5E5E5;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	background-color: #FFF;
+	border: 1px solid #DEDEDE;
 	color: #222;
 	margin-bottom: 0.5rem;
 	padding: 0.5rem;
@@ -105,14 +99,19 @@
 }
 
 .xprofile-field header {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
 	text-overflow: ellipsis;
 }
+
 .xprofile-field p {
 	font-size: 14px;
 }
 
+.xprofile-field label {
+	display: block;
+	font-weight: bold;
+}
 
 /**
  * BUTTONS AND CONTROLS
@@ -135,7 +134,7 @@
 
 .xprofile-controls {
 	margin-top: 1.5rem;
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 .xprofile-controls .button {
 	background-color: #FFF;
@@ -147,7 +146,6 @@
 .xprofile-controls .save-button {
 	float: right;
 }
-
 
 .xprofile-wrapper .trash-button {
 	color: #A00;
