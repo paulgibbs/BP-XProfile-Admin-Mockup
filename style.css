@@ -71,6 +71,8 @@
 }
 
 .sortable-placeholder {
+	border: 5px dashed #D5D2CA;
+	border: 5px dashed rgba(0, 0, 0, 0.1);
 	margin-bottom: 0.5rem;
 }
 
