@@ -37,11 +37,11 @@
 						<header contenteditable="true" placeholder="Field name">My First Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Field description goes here.</p>
 
-						<!-- TODO: figure out how to get label clicks working properly for these -->
-						<label for="field-1-required">Is field required?</label>
-						<input type="radio" name="field-1-required[]" value="1" checked>Yes</input>
-						<input type="radio" name="field-1-required[]" value="0">No</input>
-						<br>
+						<fieldset>
+							<legend>Is field required?</legend>
+							<label><input type="radio" name="field-1-required" value="1" checked>Yes</label>
+							<label><input type="radio" name="field-1-required" value="0">No</label>
+						</fieldset>
 
 						<label for="field-1-type">Field type</label>
 						<select id="field-1-type">
@@ -71,10 +71,11 @@
 						<header contenteditable="true" placeholder="Profile field name">My Second Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Another field description goes here.</p>
 
-						<label for="field-2-required">Is field required?</label>
-						<input type="radio" name="field-2-required" value="1" checked>Yes</input>
-						<input type="radio" value="0">No</input>
-						<br>
+						<fieldset>
+							<legend>Is field required?</legend>
+							<label><input type="radio" name="field-2-required" value="1">Yes</label>
+							<label><input type="radio" name="field-2-required" value="0" checked>No</label>
+						</fieldset>
 
 						<label for="field-2-type">Field type</label>
 						<select id="field-2-type">
@@ -106,10 +107,11 @@
 						<header contenteditable="true" placeholder="Profile field name">My Third Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Field description goes here.</p>
 
-						<label for="field-3-required">Is field required?</label>
-						<input type="radio" name="field-3-required" value="1" checked>Yes</input>
-						<input type="radio" value="0">No</input>
-						<br>
+						<fieldset>
+							<legend>Is field required?</legend>
+							<label><input type="radio" name="field-3-required" value="1" checked>Yes</label>
+							<label><input type="radio" name="field-3-required" value="0">No</label>
+						</fieldset>
 
 						<label for="field-3-type">Field type</label>
 						<select id="field-3-type">
@@ -139,10 +141,13 @@
 						<header contenteditable="true" placeholder="Profile field name">My Fourth Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Another field description goes here.</p>
 
-						<label for="field-4-required">Is field required?</label>
-						<input type="radio" name="field-4-required" value="1" checked>Yes</input>
-						<input type="radio" value="0">No</input>
-						<br>
+						<fieldset>
+							<legend>Is field required?</legend>
+							<label><input type="radio" name="field-4-required" value="1" checked>Yes</label>
+							<label><input type="radio" name="field-4-required" value="0">No</label>
+						</fieldset>
+
+
 
 						<label for="field-4-type">Field type</label>
 						<select id="field-4-type">

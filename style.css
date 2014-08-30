@@ -110,13 +110,27 @@
 .xprofile-field label {
 	display: inline-block;
 	font-size: 14px;
+}
+.xprofile-field > label,
+.xprofile-field legend {
 	width: 20%;
 }
 .xprofile-field input[type="radio"] {
 	margin-left: 0.5rem;
 }
-.xprofile-field label + input[type="radio"] {
-	margin-left: 0;
+.xprofile-field input[type="radio"][value="1"] {
+	margin-left: 0;  /* Best not to ask, really. */
+}
+.xprofile-field select {
+	margin-left: -4px;
+}
+
+.xprofile-field legend {
+	float: left;
+}
+.xprofile-field fieldset {
+	clear: both;
+	font-size: 14px;
 }
 
 
