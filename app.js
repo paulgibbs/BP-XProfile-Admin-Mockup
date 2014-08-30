@@ -116,7 +116,9 @@
 	 * Destructive action "are you sure?" prompt.
 	 */
 	$( '.xprofile-groups' ).on( 'click', '.trash-button', function() {
-		confirm( 'Are you sure?' );
+		if ( confirm( 'Please confirm that you want to delete this profile field. It cannot be restored.' ) ) {
+			$( this ).parents( '.xprofile-field' ).remove();
+		}
 	} );
 
 
