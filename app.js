@@ -30,8 +30,13 @@
 	 */
 	$( '.xprofile-controls' ).on( 'click', '.add-button', function() {
 		var group = $( '.xprofile-group:visible' );
-		group.find( '.xprofile-field' ).first().hide();
-		// TODO: clone this and append to bottom of group.
+		group.find( '.xprofile-field' ).first().clone().appendTo( group );
+
+		// This is required, but we should probably just fix the external library.
+		$( '.xprofile-group' ).sortable({
+			forcePlaceholderSize: true,
+			handle:               '.change-button'
+		});
 	} );
 
 
