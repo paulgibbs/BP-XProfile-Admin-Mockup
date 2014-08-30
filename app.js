@@ -18,8 +18,21 @@
 		handle:               '.change-button'
 	});
 
+
 	//$( '.xprofile-groups' ).on( 'click', '.change-button', function() {
 	//} );
+
+
+	/**
+	 * Add a new, empty form field to the displayed group.
+	 *
+	 * For the POC, this just duplicates the group's field in the group as-is.
+	 */
+	$( '.xprofile-controls' ).on( 'click', '.add-button', function() {
+		var group = $( '.xprofile-group:visible' );
+		group.find( '.xprofile-field' ).first().hide();
+		// TODO: clone this and append to bottom of group.
+	} );
 
 
 	/**
