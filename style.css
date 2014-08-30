@@ -112,6 +112,11 @@
 	font-size: 14px;
 }
 
+.xprofile-field input[type="radio"] {
+	margin-left: 0.5rem;
+}
+
+
 /**
  * BUTTONS AND CONTROLS
  */
@@ -145,7 +150,6 @@
 .xprofile-controls .save-button {
 	float: right;
 }
-
 .xprofile-wrapper .trash-button {
 	color: #A00;
 }
