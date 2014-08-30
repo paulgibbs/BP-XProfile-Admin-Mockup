@@ -37,12 +37,14 @@
 						<header contenteditable="true" placeholder="Field name">My First Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Field description goes here.</p>
 
-						<label>Field required?<input
-							type="radio" value="0" checked>No</input>
-							<input type="radio" value="1">Yes</input>
-						</label>
+						<!-- TODO: figure out how to get label clicks working properly for these -->
+						<label for="field-1-required">Field required?</label>
+						<input type="radio" name="field-1-required[]" value="1" checked>Yes</input>
+						<input type="radio" name="field-1-required[]" value="0">No</input>
+						<br>
 
-						<label>Field type:<select>
+						<label for="field-1-type">Field type:</label>
+						<select id="field-1-type">
 							<optgroup label="Multi Fields">
 								<option value="checkbox">Checkboxes</option>
 								<option value="selectbox">Drop Down Select Box</option>
@@ -57,7 +59,7 @@
 								<option value="textbox" selected="selected">Text Box</option>
 								<option value="url">URL</option>
 							</optgroup>
-						</select></label>
+						</select>
 
 						<div class="field-controls">
 							<button class="dashicons dashicons-trash button trash-button"><span class="screen-reader-text">Trash profile field</span></button>
@@ -69,10 +71,28 @@
 						<header contenteditable="true" placeholder="Profile field name">My Second Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Another field description goes here.</p>
 
-						<label>Field required?<input
-							type="radio" value="0">No</input>
-							<input type="radio" value="1" checked>Yes</input>
-						</label>
+						<label for="field-2-required">Field required?</label>
+						<input type="radio" name="field-2-required" value="1" checked>Yes</input>
+						<input type="radio" value="0">No</input>
+						<br>
+
+						<label for="field-2-type">Field type:</label>
+						<select id="field-2-type">
+							<optgroup label="Multi Fields">
+								<option value="checkbox">Checkboxes</option>
+								<option value="selectbox">Drop Down Select Box</option>
+								<option value="multiselectbox">Multi Select Box</option>
+								<option value="radio">Radio Buttons</option>
+							</optgroup>
+
+							<optgroup label="Single Fields">
+								<option value="datebox">Date Selector</option>
+								<option value="textarea" selected="selected">Multi-line Text Area</option>
+								<option value="number">Number</option>
+								<option value="textbox">Text Box</option>
+								<option value="url">URL</option>
+							</optgroup>
+						</select>
 
 						<div class="field-controls">
 							<button class="dashicons dashicons-trash button trash-button"><span class="screen-reader-text">Trash profile field</span></button>
@@ -86,10 +106,28 @@
 						<header contenteditable="true" placeholder="Profile field name">My Third Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Field description goes here.</p>
 
-						<label>Field required?<input
-							type="radio" value="0" checked>No</input>
-							<input type="radio" value="1">Yes</input>
-						</label>
+						<label for="field-3-required">Field required?</label>
+						<input type="radio" name="field-3-required" value="1" checked>Yes</input>
+						<input type="radio" value="0">No</input>
+						<br>
+
+						<label for="field-3-type">Field type:</label>
+						<select id="field-3-type">
+							<optgroup label="Multi Fields">
+								<option value="checkbox">Checkboxes</option>
+								<option value="selectbox">Drop Down Select Box</option>
+								<option value="multiselectbox">Multi Select Box</option>
+								<option value="radio">Radio Buttons</option>
+							</optgroup>
+
+							<optgroup label="Single Fields">
+								<option value="datebox" selected="selected">Date Selector</option>
+								<option value="textarea">Multi-line Text Area</option>
+								<option value="number">Number</option>
+								<option value="textbox">Text Box</option>
+								<option value="url">URL</option>
+							</optgroup>
+						</select>
 
 						<div class="field-controls">
 							<button class="dashicons dashicons-trash button trash-button"><span class="screen-reader-text">Trash profile field</span></button>
@@ -101,10 +139,28 @@
 						<header contenteditable="true" placeholder="Profile field name">My Fourth Profile Field</header>
 						<p contenteditable="true" placeholder="Field description">Another field description goes here.</p>
 
-						<label>Field required?<input
-							type="radio" value="0">No</input>
-							<input type="radio" value="1" checked>Yes</input>
-						</label>
+						<label for="field-4-required">Field required?</label>
+						<input type="radio" name="field-4-required" value="1" checked>Yes</input>
+						<input type="radio" value="0">No</input>
+						<br>
+
+						<label for="field-4-type">Field type:</label>
+						<select id="field-4-type">
+							<optgroup label="Multi Fields">
+								<option value="checkbox">Checkboxes</option>
+								<option value="selectbox">Drop Down Select Box</option>
+								<option value="multiselectbox">Multi Select Box</option>
+								<option value="radio">Radio Buttons</option>
+							</optgroup>
+
+							<optgroup label="Single Fields">
+								<option value="datebox">Date Selector</option>
+								<option value="textarea">Multi-line Text Area</option>
+								<option value="number">Number</option>
+								<option value="textbox" selected="selected">Text Box</option>
+								<option value="url">URL</option>
+							</optgroup>
+						</select>
 
 
 						<div class="field-controls">
