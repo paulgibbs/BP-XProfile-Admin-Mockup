@@ -135,6 +135,9 @@
 .field-controls .change-button {
 	float: right;
 }
+.field-controls {
+	margin-top: 1.5rem;
+}
 
 .xprofile-controls {
 	margin-top: 1.5rem;
