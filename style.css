@@ -97,25 +97,24 @@
 .xprofile-field:last-child {
 	margin-bottom: 0;
 }
-
 .xprofile-field header {
 	font-size: 18px;
 	font-weight: 600;
 	text-overflow: ellipsis;
 }
-
 .xprofile-field p {
 	font-size: 14px;
 }
-
 .xprofile-field label {
+	display: block;
 	font-size: 14px;
 }
-
 .xprofile-field input[type="radio"] {
 	margin-left: 0.5rem;
 }
-
+.xprofile-field select {
+	margin-left: 0.5rem;
+}
 
 /**
  * BUTTONS AND CONTROLS
@@ -153,6 +152,7 @@
 .xprofile-controls .save-button {
 	float: right;
 }
+
 .xprofile-wrapper .trash-button {
 	color: #A00;
 }
