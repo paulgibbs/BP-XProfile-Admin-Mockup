@@ -127,6 +127,7 @@
 
 .xprofile-field legend {
 	float: left;
+	padding-left: 0;
 }
 .xprofile-field fieldset {
 	clear: both;
