@@ -178,3 +178,20 @@
 .xprofile-wrapper .trash-button:hover {
 	color: #F00;
 }
+
+
+/**
+ * RESPONSIVE MAGIC
+ *
+ * The base CSS is for phone-sized devices.
+ */
+
+/* Tablets */
+@media (min-width: 768px) {
+	.xprofile-wrapper { background-color: BurlyWood; }
+}
+
+/* Desktops */
+@media (min-width: 1200px) {
+	.xprofile-wrapper { background-color: Beige; }
+}
