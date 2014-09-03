@@ -81,6 +81,10 @@
  * PROFILE GROUPS
  */
 
+#xprofile-groups-secondary {
+	display: none;
+}
+
 .xprofile-group {
 }
 
@@ -132,6 +136,7 @@
 .xprofile-field fieldset {
 	clear: both;
 	font-size: 14px;
+	margin-bottom: 0.5rem;
 }
 
 
@@ -184,14 +189,21 @@
  * RESPONSIVE MAGIC
  *
  * The base CSS is for phone-sized devices.
+ *
+ * Small tablets = 783px+ wide  (matches a breakpoint in wp-admin).
+ * Large tablets = 1200px+ wide (arbitary breakpoint, needs testing).
  */
 
-/* Tablets */
-@media (min-width: 783px) {
+/* Small + large tablets */
+@media only screen and (min-width: 783px) {
 	.xprofile-wrapper { background-color: BurlyWood; }
+
+	#xprofile-groups-secondary {
+		display: block;
+	}
 }
 
-/* Desktops */
-@media (min-width: 1200px) {
+/* Large tablets */
+@media only screen and (min-width: 1200px) {
 	.xprofile-wrapper { background-color: Beige; }
 }
