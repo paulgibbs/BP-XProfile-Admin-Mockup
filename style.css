@@ -202,6 +202,19 @@
 	#xprofile-groups-secondary {
 		display: block;
 	}
+
+	.xprofile-navigation,
+	.xprofile-groups {
+		/* TODO: why can't this be 50% when we set a right margin (in px or rem) on #xprofile-groups-primary? We're using border-box! */
+		width: 49%;
+	}
+
+	#xprofile-groups-primary {
+		margin-right: 2%;
+	}
+	.xprofile-groups {
+		float: left;
+	}
 }
 
 /* Large tablets */
