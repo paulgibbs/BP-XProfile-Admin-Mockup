@@ -2,11 +2,12 @@
 (function( $, undefined ) {
 
 	// Show/hide profile fields when the main nav changes.
-	$( '.xprofile-navigation' ).on( 'change', function() {
-		var groupID = $( this ).find( 'option:selected' ).val();
+	$( '.group-picker' ).on( 'change', function() {
+		var $this = $( this ),
+			groupID = $this.find( 'option:selected' ).val();
 
-		$( '.xprofile-group' ).addClass( 'hide' );
-		$( '.xprofile-group[data-group-id="' + groupID + '"]' ).removeClass( 'hide' );
+		$( $this.data( 'groups-id' ) + ' .xprofile-group' ).addClass( 'hide' );
+		$( $this.data( 'groups-id' ) + ' .xprofile-group[data-group-id="' + groupID + '"]' ).removeClass( 'hide' );
 	} );
 
 
