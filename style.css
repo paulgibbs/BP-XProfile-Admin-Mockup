@@ -147,6 +147,7 @@
 .xprofile-field {
 	clear: both;
 }
+.xprofile-groups-wrapper,
 .xprofile-controls,
 .field-controls {
 	overflow: auto;
