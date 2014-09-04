@@ -67,6 +67,8 @@
 .group-picker {
 	font-size: 16px;
 	font-weight: 300;
+	margin-left: 0;
+	margin-right: 0;
 	width: 100%;
 }
 
@@ -81,7 +83,8 @@
  * PROFILE GROUPS
  */
 
-#xprofile-groups-secondary {
+#xprofile-groups-secondary,
+#group-picker-secondary {
 	display: none;
 }
 
@@ -147,6 +150,7 @@
 .xprofile-field {
 	clear: both;
 }
+.xprofile-navigation,
 .xprofile-groups-wrapper,
 .xprofile-controls,
 .field-controls {
@@ -202,18 +206,22 @@
 	#xprofile-groups-secondary {
 		display: block;
 	}
-
-	.xprofile-navigation,
-	.xprofile-groups {
-		/* TODO: why can't this be 50% when we set a right margin (in px or rem) on #xprofile-groups-primary? We're using border-box! */
-		width: 49%;
+	#group-picker-secondary {
+		display: inline-block;
 	}
 
+	.xprofile-groups {
+		/* TODO: why can't this be 50% when we set a right margin (in px or rem) on #xprofile-groups-primary? We're using border-box! */
+		float: left;
+		width: 49%;
+	}
 	#xprofile-groups-primary {
 		margin-right: 2%;
 	}
-	.xprofile-groups {
+
+	.group-picker {
 		float: left;
+		width: 50%;
 	}
 }
 
