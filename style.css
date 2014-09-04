@@ -118,7 +118,7 @@
 	display: inline-block;
 	font-size: 14px;
 }
-.xprofile-field > label,
+.xprofile-field form > label,
 .xprofile-field legend {
 	width: 20%;
 }
