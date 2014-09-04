@@ -22,8 +22,16 @@
 		<div class="xprofile-wrapper">
 
 			<nav class="xprofile-navigation">
-				<label class="screen-reader-text" for="group-picker">Switch between profile field groups.</label>
-				<select class="group-picker">
+				<label class="screen-reader-text" for="group-picker-primary">Switch between profile field groups.</label>
+				<select class="group-picker" id="group-picker-primary">
+					<option value="1" selected>Field Group Alpha</option>
+					<option value="2">Field Group Beta</option>
+					<option value="3">Field Group Gamma</option>
+					<option value="4">Field Group Delta</option>
+				</select>
+
+				<label class="screen-reader-text" for="group-picker-secondary">Switch between profile field groups.</label>
+				<select class="group-picker" id="group-picker-secondary">
 					<option value="1">Field Group Alpha</option>
 					<option value="2">Field Group Beta</option>
 					<option value="3" selected>Field Group Gamma</option>
