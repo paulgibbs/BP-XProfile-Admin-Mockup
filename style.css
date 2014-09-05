@@ -88,9 +88,6 @@
 	display: none;
 }
 
-.xprofile-group {
-}
-
 
 /**
  * PROFILE FIELDS
@@ -106,21 +103,17 @@
 .xprofile-field:last-child {
 	margin-bottom: 0;
 }
+.xprofile-field fieldset {
+	font-size: 14px;
+	margin-bottom: 0.5rem;
+}
+.xprofile-field fieldset label {
+	display: inline;
+}
 .xprofile-field header {
 	font-size: 18px;
 	font-weight: 600;
 	text-overflow: ellipsis;
-}
-.xprofile-field p {
-	font-size: 14px;
-}
-.xprofile-field label {
-	display: inline-block;
-	font-size: 14px;
-}
-.xprofile-field form > label,
-.xprofile-field legend {
-	width: 20%;
 }
 .xprofile-field input[type="radio"] {
 	margin-left: 0.5rem;
@@ -128,18 +121,28 @@
 .xprofile-field input[type="radio"][value="1"] {
 	margin-left: 0;  /* Best not to ask, really. */
 }
-.xprofile-field select {
-	margin-left: -4px;
+.xprofile-field input[type="text"],
+.xprofile-field label,
+.xprofile-field legend,
+.xprofile-field select,
+.xprofile-field textarea {
+	display: block;
+	font-size: 14px;
+	margin-bottom: inherit;
+	width: 100%;
 }
-
-.xprofile-field legend {
-	float: left;
+.xprofile-field label {
+	margin-top: 1rem;
 	padding-left: 0;
 }
-.xprofile-field fieldset {
-	clear: both;
+.xprofile-field legend {
+	font-weight: 600;
+}
+.xprofile-field p {
 	font-size: 14px;
-	margin-bottom: 0.5rem;
+}
+.xprofile-group .xprofile-field select {
+	width: auto;
 }
 
 
