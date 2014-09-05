@@ -52,9 +52,11 @@
 
       items.find(options.handle).mousedown(function () {
         isHandle = true;
+        items.attr('draggable', 'true');
       }).mouseup(function () {
-          isHandle = false;
-        });
+        isHandle = false;
+        items.attr('draggable', 'false');
+      });
       $(this).data('items', options.items);
       placeholders = placeholders.add(placeholder);
       if (options.connectWith) {
@@ -64,7 +66,7 @@
       items.attr('role', 'option');
       items.attr('aria-grabbed', 'false');
 
-      items.attr('draggable', 'true').on('dragstart.h5s',function (e) {
+      items.on('dragstart.h5s',function (e) {
         e.stopImmediatePropagation();
         if (options.handle && !isHandle) {
           return false;
