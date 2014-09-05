@@ -51,6 +51,12 @@
 	text-align: center;
 }
 
+[contenteditable="true"]:hover,
+.sortable-placeholder {
+	border: 5px dashed #D5D2CA;
+	border: 5px dashed rgba(0, 0, 0, 0.1);
+}
+
 
 /**
  * NAVIGATION
@@ -70,12 +76,6 @@
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
-}
-
-.sortable-placeholder {
-	border: 5px dashed #D5D2CA;
-	border: 5px dashed rgba(0, 0, 0, 0.1);
-	margin-bottom: 0.5rem;
 }
 
 
