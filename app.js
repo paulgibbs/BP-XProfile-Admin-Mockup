@@ -119,7 +119,9 @@
 	/**
 	 * Destructive action "are you sure?" prompt.
 	 */
-	$( '.xprofile-groups' ).on( 'click', '.trash-button', function() {
+	$( '.xprofile-groups' ).on( 'click', '.trash-button', function( e ) {
+		e.preventDefault();
+
 		if ( confirm( 'Please confirm that you want to delete this profile field. It cannot be restored.' ) ) {
 			$( this ).parents( '.xprofile-field' ).remove();
 		}
