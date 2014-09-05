@@ -20,8 +20,9 @@
 	});
 
 
-	//$( '.xprofile-groups' ).on( 'click', '.change-button', function() {
-	//} );
+	$( '.xprofile-groups' ).on( 'click', '.change-button', function( e ) {
+		e.preventDefault();
+	} );
 
 
 	/**
@@ -29,7 +30,9 @@
 	 *
 	 * For the POC, this just duplicates the group's field in the group as-is.
 	 */
-	$( '.xprofile-controls' ).on( 'click', '.add-button', function() {
+	$( '.xprofile-controls' ).on( 'click', '.add-button', function( e ) {
+		e.preventDefault();
+
 		var group = $( '.xprofile-group:visible' );
 		group.find( '.xprofile-field' ).first().clone().appendTo( group );
 
