@@ -168,15 +168,19 @@
 }
 
 .xprofile-controls {
-	margin-top: 1.5rem;
-	padding: 0 0.5rem;
+	margin-top: 0.5rem;
+	padding: 0 0.5rem 0.5rem;
 }
 .xprofile-controls .button {
 	background-color: #FFF;
+	margin-bottom: 0;
+	text-align: center;
 }
 .xprofile-controls .add-button {
 	float: left;
-	padding-top: 0.5rem;  /* approx. line up the top of the + and Save buttons */
+}
+.xprofile-controls .add-button:before {
+	vertical-align: middle;  /* Todo: this isn't lining up properly on iphone */
 }
 .xprofile-controls .save-button {
 	float: right;
