@@ -28,7 +28,7 @@
 	/**
 	 * Add a new, empty form field to the displayed group.
 	 *
-	 * For the POC, this just duplicates the group's field in the group as-is.
+	 * For the POC, this just duplicates the primary group's first field into the same group as-is.
 	 */
 	$( '.xprofile-controls' ).on( 'click', '.add-button', function( e ) {
 		e.preventDefault();
