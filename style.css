@@ -33,6 +33,7 @@
 .xprofile-wrapper .dashicons {
 	font-size: 2rem;
 	height: 44px;
+	margin-bottom: 0;
 	padding: 0;
 	width: 44px;
 }
@@ -171,7 +172,10 @@
 	float: right;
 }
 .field-controls {
-	margin-top: 1rem;
+	background-color: #FAFAFA;
+	border-top: 1px solid #DEDEDE;
+	margin: 1rem -0.5rem -0.5rem;
+	padding: 0.5rem 0.5rem;
 }
 
 .xprofile-controls {
