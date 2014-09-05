@@ -106,7 +106,6 @@
 	margin-bottom: 0;
 }
 .xprofile-field fieldset {
-	font-size: 14px;
 	margin-bottom: 0.5rem;
 }
 .xprofile-field fieldset label {
@@ -134,11 +133,13 @@
 	width: 100%;
 }
 .xprofile-field label {
-	margin-top: 1rem;
+	margin: 1rem 0 0.5rem;
 	padding-left: 0;
 }
+.xprofile-field label,
 .xprofile-field legend {
 	font-weight: 600;
+	font-size: 16px;
 }
 .xprofile-field p {
 	font-size: 14px;
