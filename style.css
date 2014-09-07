@@ -109,9 +109,6 @@
 .xprofile-field fieldset {
 	margin-bottom: 0.5rem;
 }
-.xprofile-field fieldset label {
-	display: inline;
-}
 .xprofile-field header {
 	font-size: 18px;
 	font-weight: 600;
@@ -127,13 +124,10 @@
 	margin-bottom: inherit;
 	width: 100%;
 }
-.xprofile-field label + label {
-	margin-left: 0.5rem;
-}
 .xprofile-field form > label {
 	font-weight: 600;
 	font-size: 16px;
-	margin: 0 0 0.5rem;
+	margin-bottom: 0.5rem;
 	padding-left: 0;
 }
 .xprofile-field legend {
