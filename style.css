@@ -124,12 +124,6 @@
 	margin-bottom: inherit;
 	width: 100%;
 }
-.xprofile-field form > label {
-	font-weight: 600;
-	font-size: 16px;
-	margin-bottom: 0.5rem;
-	padding-left: 0;
-}
 .xprofile-field legend {
 	font-weight: 600;
 	font-size: 16px;
