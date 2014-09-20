@@ -20,8 +20,20 @@
 	});
 
 
+	/**
+	 * Pop open the "move field" modal.
+	 */
 	$( '.xprofile-groups' ).on( 'click', '.change-button', function( e ) {
 		e.preventDefault();
+		$( '.xprofile-modal' ).removeClass( 'hide' ).addClass( 'show' );
+	} );
+	$( '.xprofile-modal' ).on( 'click', function( e ) {
+		e.preventDefault();
+		$( '.xprofile-modal' ).removeClass( 'show' ).addClass( 'hide' );
+	} );
+	$( '.xprofile-modal-contents' ).on( 'click', function( e ) {
+		e.preventDefault();
+		e.stopPropagation();
 	} );
 
 
